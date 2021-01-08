@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.Optional;
 
-public class RowTest {
+public class RowfTest {
     private static EntityManagerFactory emf;
     private static EntityManager em;
 
@@ -23,7 +23,7 @@ public class RowTest {
 
     @Test
     public void itShouldCreateEntity() {
-        Row row = new Row("jakarta");
+        Rowf row = new Rowf("jakartaPU");
 
         EntityTransaction tx = em.getTransaction();
         tx.begin();
@@ -31,8 +31,8 @@ public class RowTest {
         tx.commit();
         em.clear();
 
-        Row newRow = em.createQuery("select r from rowf r where r.value = :value", Row.class)
-                .setParameter("value", "jakarta").getSingleResult();
+        Rowf newRow = em.createQuery("select r from rowf r where r.value = :value", Rowf.class)
+                .setParameter("value", "jakartaPU").getSingleResult();
         assertNotNull(newRow);
     }
 

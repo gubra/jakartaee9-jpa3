@@ -6,7 +6,7 @@
         version="3.0">
              
     <persistence-unit name="PU" transaction-type="RESOURCE_LOCAL">
-        <class>org.jakab.jakarta.persistence.Row</class>
+        <class>org.jakab.jakarta.persistence.Rowf</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/demo"/>

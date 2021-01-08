@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity(name = "rowf")
-public class Row {
+public class Rowf {
 	
     @Id
     @GeneratedValue
@@ -17,10 +17,10 @@ public class Row {
      * Empty constructor needed for JPA.
      */
     @SuppressWarnings("unused")
-    public Row() {
+    public Rowf() {
     }
 
-    public Row(String value) {
+    public Rowf(String value) {
         this.value = value;
     }
 
